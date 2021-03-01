@@ -17,7 +17,11 @@ function takeTest (side) {
   }
   if (i >= 5) {
     document.getElementById("outputtime").innerHTML = "Your average time was " + totalTime/5 + "ms";
-    document.getElementById("outputpoints").innerHTML = "You picked the wrong anwser " + wrongs + " times";
+    if (wrongs == 1) {
+      document.getElementById("outputpoints").innerHTML = "You picked the wrong anwser " + wrongs + " time";
+    } else {
+      document.getElementById("outputpoints").innerHTML = "You picked the wrong anwser " + wrongs + " times";
+    }
     document.getElementById("start").style.display = "block";
     document.getElementById("test").style.display = "none";
     i = 0;
