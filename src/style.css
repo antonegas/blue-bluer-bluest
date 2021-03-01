@@ -1,19 +1,13 @@
 body {
   font-family: 'Open Sans', sans-serif;
-    text-align: center;
+  text-align: center;
+  overflow: hidden;
 }
 
 header h1 {
   font-size: 10vh;
   margin-top: 0vh;
-}
-
-p {
-  font-size: 2.2vh;
-}
-
-header p {
-  margin-top: -7vh;
+  line-height: 10vh;
 }
 
 .blue {
@@ -25,5 +19,69 @@ header p {
 }
 
 .bluest {
+  color: rgb(0,0,80);
+}
+
+p {
+  font-size: 2.2vh;
+}
+
+header p {
+  margin-top: -5vh;
+}
+
+section {
+  height: 60vh;
+}
+
+section button {
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 0;
+  border: none;
+}
+
+section #start {
+  /* display: none; */
+}
+
+section #start button {
+  font-size: 2.2vh;
+  color: #fff;
+  font-size: 5vh;
+  background-color: rgb(0,0,240);
+  padding: 1vh;
+  margin-top: 15%;
+}
+
+section #test {
+  display: none;
+}
+
+section #test button {
+  margin: 3vh;
+  width: 25vw;
+  height: 25vw;
+  margin-top: 4%;
+}
+
+section button:focus {
+  outline: rgb(0,0,240) 20px solid;
+  background-color: #fff;
+  color: #000;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: rgb(0,0,240);
+}
+
+footer a:visited {
   color: rgb(0,0,80);
 }
