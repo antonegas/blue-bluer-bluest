@@ -64,7 +64,7 @@ section #test button {
   margin-top: 4%;
 }
 
-section button:focus {
+section #start button:focus {
   outline: rgb(0,0,240) 20px solid;
   background-color: #fff;
   color: #000;
