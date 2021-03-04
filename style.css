@@ -1,7 +1,11 @@
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  overflow: hidden;
+}
+
+#wrapper {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 header h1 {
@@ -73,8 +77,8 @@ section #start button:focus {
 footer {
   position: absolute;
   bottom: 0;
-  width: 100vw;
-  margin: 0;
+  left: 0;
+  margin: 0 0;
   padding: 0;
 }
 
@@ -84,4 +88,10 @@ footer a {
 
 footer a:visited {
   color: rgb(0,0,80);
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 4.2vw;
+  }
 }
