@@ -43,6 +43,6 @@ function takeTest (side) {
     if (i < 5) {
       start = new Date;
     }
+    i++;
   }
-  i++;
 }
